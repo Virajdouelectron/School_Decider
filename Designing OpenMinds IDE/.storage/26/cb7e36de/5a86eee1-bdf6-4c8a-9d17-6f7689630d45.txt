@@ -1,0 +1,25 @@
+$ pnpm list lucide-react --depth=0
+Legend: production dependency, optional only, dev only
+
+shadcnui /workspace/shadcn-ui
+
+dependencies:
+lucide-react 0.462.0
+$ cd /workspace/shadcn-ui && grep -r "export \{ default as" ./node_modules/lucide-react
+
+grep: Unmatched \{
+$ cd /workspace/shadcn-ui && ls -la ./node_modules/lucide-react/dist/esm
+
+total 396
+drwxr-xr-x 4 root root    235 Jul 29 10:36 .
+drwxr-xr-x 5 root root    132 Jul 29 10:36 ..
+-rw-r--r-- 1 root root   1084 Jul 29 10:36 Icon.js
+-rw-r--r-- 1 root root   4896 Jul 29 10:36 Icon.js.map
+-rw-r--r-- 1 root root    747 Jul 29 10:36 createLucideIcon.js
+-rw-r--r-- 1 root root   2184 Jul 29 10:36 createLucideIcon.js.map
+-rw-r--r-- 1 root root    493 Jul 29 10:36 defaultAttributes.js
+-rw-r--r-- 1 root root   1489 Jul 29 10:36 defaultAttributes.js.map
+drwxr-xr-x 2 root root 114688 Jul 29 10:36 icons
+-rw-r--r-- 1 root root 201385 Jul 29 10:36 lucide-react.js
+-rw-r--r-- 1 root root   1647 Jul 29 10:36 lucide-react.js.map
+drwxr-xr-x 3 root root     17 Jul 29 10:36 shared

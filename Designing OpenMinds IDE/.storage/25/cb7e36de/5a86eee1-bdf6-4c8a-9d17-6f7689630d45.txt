@@ -1,0 +1,10 @@
+$ pnpm list lucide-react --depth=0
+Legend: production dependency, optional only, dev only
+
+shadcnui /workspace/shadcn-ui
+
+dependencies:
+lucide-react 0.462.0
+$ cd /workspace/shadcn-ui && grep -r "export \{ default as" ./node_modules/lucide-react
+
+grep: Unmatched \{
